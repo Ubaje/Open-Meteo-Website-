@@ -6,10 +6,56 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to the Weather Dashboard</h1>
-  <nav>
-    <a href="temperature.html">View Temperature</a>
-    <a href="conditions.html">View Weather Conditions</a>
-  </nav>
+  <main>
+    <form id="coordinates">
+      <input type="search" class="topnav" id="latitude-data" placeholder="Latitude">
+      <input type="search" class="topnav" id="longitude-data" placeholder="Longitude">
+      <button type="button" class="button" id="search-button">Search</button>
+    </form>
+    <div id="temperature-data">Loading temperature...</div>
+
+    <section class="today-forcast">
+    <div class="forecast-card">
+      <h3>TODAY'S FORECAST</h3>
+      <div class="forecast-grid">
+        <div class="forecast-item">
+          <div class="time">6:00 AM</div>
+          <img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Cloudy" />
+          <div class="temp">25°</div>
+        </div>
+        <div class="forecast-item">
+          <div class="time">9:00 AM</div>
+          <img src="https://img.icons8.com/ios-filled/50/partly-cloudy-day.png" alt="Partly Cloudy" />
+          <div class="temp">28°</div>
+        </div>
+        <div class="forecast-item">
+          <div class="time">12:00 PM</div>
+          <img src="https://img.icons8.com/ios-filled/50/sun.png" alt="Sunny" />
+          <div class="temp">33°</div>
+        </div>
+        <div class="forecast-item">
+          <div class="time">3:00 PM</div>
+          <img src="https://img.icons8.com/ios-filled/50/sun.png" alt="Sunny" />
+          <div class="temp">34°</div>
+        </div>
+        <div class="forecast-item">
+          <div class="time">6:00 PM</div>
+          <img src="https://img.icons8.com/ios-filled/50/sun.png" alt="Sunny" />
+          <div class="temp">32°</div>
+        </div>
+        <div class="forecast-item">
+          <div class="time">9:00 PM</div>
+          <img src="https://img.icons8.com/ios-filled/50/partly-cloudy-night.png" alt="Partly Cloudy Night" />
+          <div class="temp">30°</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
+    </section>
+
+    <script src="script.js"></script>
+    
+  </main>
 </body>
 </html>
